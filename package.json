@@ -1,0 +1,27 @@
+{
+  "name": "string-calc",
+  "version": "1.0.0",
+  "description": "String Calculator",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/_mocha --require ./config/testSetup.js --require babel-core/register --recursive \"./src/**/*.test.js\""
+  },
+  "author": "Anthony Feeney",
+  "license": "ISC"
+}
